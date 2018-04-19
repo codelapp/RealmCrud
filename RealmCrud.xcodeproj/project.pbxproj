@@ -3,18 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FEF0894E74FEDD4A5943FF6 /* Pods_RealmCrud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69EABB3F6AB0D5C8E027213B /* Pods_RealmCrud.framework */; };
 		CF007B551F9D176700E1F4FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF007B541F9D176700E1F4FA /* AppDelegate.swift */; };
 		CF007B571F9D176700E1F4FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF007B561F9D176700E1F4FA /* ViewController.swift */; };
 		CF007B5A1F9D176700E1F4FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF007B581F9D176700E1F4FA /* Main.storyboard */; };
 		CF007B5C1F9D176700E1F4FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF007B5B1F9D176700E1F4FA /* Assets.xcassets */; };
 		CF007B5F1F9D176700E1F4FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF007B5D1F9D176700E1F4FA /* LaunchScreen.storyboard */; };
+		CFAC73861F9D1E7C008BE335 /* Contactos.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAC73851F9D1E7C008BE335 /* Contactos.swift */; };
+		CFAC73881F9D2671008BE335 /* EditarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAC73871F9D2671008BE335 /* EditarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		425929648022C18483D95848 /* Pods-RealmCrud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmCrud.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmCrud/Pods-RealmCrud.debug.xcconfig"; sourceTree = "<group>"; };
+		69EABB3F6AB0D5C8E027213B /* Pods_RealmCrud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmCrud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2CB258D7C5543CB1AA00FDD /* Pods-RealmCrud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmCrud.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmCrud/Pods-RealmCrud.release.xcconfig"; sourceTree = "<group>"; };
 		CF007B511F9D176700E1F4FA /* RealmCrud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmCrud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF007B541F9D176700E1F4FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF007B561F9D176700E1F4FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		CF007B5B1F9D176700E1F4FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF007B5E1F9D176700E1F4FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF007B601F9D176700E1F4FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFAC73851F9D1E7C008BE335 /* Contactos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contactos.swift; sourceTree = "<group>"; };
+		CFAC73871F9D2671008BE335 /* EditarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FEF0894E74FEDD4A5943FF6 /* Pods_RealmCrud.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ADA1E5C2F2090873928738D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69EABB3F6AB0D5C8E027213B /* Pods_RealmCrud.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C43A514649501B1FA09B3709 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				425929648022C18483D95848 /* Pods-RealmCrud.debug.xcconfig */,
+				C2CB258D7C5543CB1AA00FDD /* Pods-RealmCrud.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CF007B481F9D176700E1F4FA = {
 			isa = PBXGroup;
 			children = (
 				CF007B531F9D176700E1F4FA /* RealmCrud */,
 				CF007B521F9D176700E1F4FA /* Products */,
+				C43A514649501B1FA09B3709 /* Pods */,
+				ADA1E5C2F2090873928738D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,7 +83,9 @@
 			isa = PBXGroup;
 			children = (
 				CF007B541F9D176700E1F4FA /* AppDelegate.swift */,
+				CFAC73851F9D1E7C008BE335 /* Contactos.swift */,
 				CF007B561F9D176700E1F4FA /* ViewController.swift */,
+				CFAC73871F9D2671008BE335 /* EditarViewController.swift */,
 				CF007B581F9D176700E1F4FA /* Main.storyboard */,
 				CF007B5B1F9D176700E1F4FA /* Assets.xcassets */,
 				CF007B5D1F9D176700E1F4FA /* LaunchScreen.storyboard */,
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF007B631F9D176700E1F4FA /* Build configuration list for PBXNativeTarget "RealmCrud" */;
 			buildPhases = (
+				5C6E5EDEE06F6DAEE56893F7 /* [CP] Check Pods Manifest.lock */,
 				CF007B4D1F9D176700E1F4FA /* Sources */,
 				CF007B4E1F9D176700E1F4FA /* Frameworks */,
 				CF007B4F1F9D176700E1F4FA /* Resources */,
+				60A738F54197C9ED8C742480 /* [CP] Embed Pods Frameworks */,
+				A53613A090E113B6E15076F8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -92,7 +125,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
-				ORGANIZATIONNAME = "Jorge Maldonado Borbón";
+				ORGANIZATIONNAME = codelapp;
 				TargetAttributes = {
 					CF007B501F9D176700E1F4FA = {
 						CreatedOnToolsVersion = 9.0.1;
@@ -101,7 +134,7 @@
 				};
 			};
 			buildConfigurationList = CF007B4C1F9D176700E1F4FA /* Build configuration list for PBXProject "RealmCrud" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -131,11 +164,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5C6E5EDEE06F6DAEE56893F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealmCrud-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60A738F54197C9ED8C742480 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RealmCrud/Pods-RealmCrud-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmCrud/Pods-RealmCrud-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A53613A090E113B6E15076F8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmCrud/Pods-RealmCrud-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CF007B4D1F9D176700E1F4FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFAC73861F9D1E7C008BE335 /* Contactos.swift in Sources */,
+				CFAC73881F9D2671008BE335 /* EditarViewController.swift in Sources */,
 				CF007B571F9D176700E1F4FA /* ViewController.swift in Sources */,
 				CF007B551F9D176700E1F4FA /* AppDelegate.swift in Sources */,
 			);
@@ -216,6 +307,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -265,20 +357,25 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		CF007B641F9D176700E1F4FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 425929648022C18483D95848 /* Pods-RealmCrud.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H6EHL55492;
+				DEVELOPMENT_TEAM = WQWRXX9PHB;
 				INFOPLIST_FILE = RealmCrud/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorge.RealmCrud;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codelapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -287,13 +384,17 @@
 		};
 		CF007B651F9D176700E1F4FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2CB258D7C5543CB1AA00FDD /* Pods-RealmCrud.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H6EHL55492;
+				DEVELOPMENT_TEAM = WQWRXX9PHB;
 				INFOPLIST_FILE = RealmCrud/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorge.RealmCrud;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codelapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
